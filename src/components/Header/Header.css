@@ -13,7 +13,7 @@
   background-color: black;
 }
 .header__logo-link {
-  font-family: "Roboto Slab";
+  font-family: "Roboto Slab", "Arial", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -24,7 +24,7 @@
   margin: 0 0 0 104px;
 }
 .header__link {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   padding-bottom: 23px;
   font-weight: 500;
@@ -44,7 +44,7 @@
   border-bottom: 2px solid;
 }
 .header__button {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;

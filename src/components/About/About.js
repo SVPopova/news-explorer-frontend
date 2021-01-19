@@ -5,7 +5,7 @@ import avatar from "../../images/avatar.png";
 function About(props) {
   return (
     <section className="author">
-      <img className="author__avatar" src={avatar} ait="Аватар"></img>
+      <img className="author__avatar" src={avatar} alt="Аватар"></img>
       <div className="author__about">
         <h2 className="author__title">Об авторе</h2>
         <p className="author__text">

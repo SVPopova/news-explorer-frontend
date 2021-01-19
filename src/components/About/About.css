@@ -18,7 +18,7 @@
   margin: 51px 0 0 0;
 }
 .author__title {
-  font-family: "Roboto Slab";
+  font-family: "Roboto Slab", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -27,7 +27,7 @@
 }
 .author__text {
   max-width: 600px;
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;

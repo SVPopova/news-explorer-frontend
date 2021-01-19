@@ -11,7 +11,7 @@ function SearchForm(props) {
       noValidate
       onSubmit={props.onSubmit}
     >
-      <input className="form__input" placeholder="Введите тему новости"></input>
+      <input className="form__input" placeholder="Введите тему новости" required type="text" name="search"></input>
       <button className="form__submit" type="submit">
         Искать
       </button>

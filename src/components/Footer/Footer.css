@@ -7,7 +7,7 @@
   height: 80px;
 }
 .footer__text {
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -23,7 +23,7 @@
 }
 .footer__link {
   max-width: 112px;
-  font-family: "Roboto";
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;

@@ -32,7 +32,7 @@ function NewsCard(props) {
         <img
           className="element__image"
           src={imagecard}
-          // alt={props.card.name}
+          alt="{props.card.name}"
           // onClick={handleClick}
         />
         <div className="element__group">
@@ -62,7 +62,7 @@ function NewsCard(props) {
         <img
           className="element__image"
           src={imagecard}
-          // alt={props.card.name}
+          alt="{props.card.name}"
           // onClick={handleClick}
         />
         <div className="element__group">
@@ -92,7 +92,7 @@ function NewsCard(props) {
         <img
           className="element__image"
           src={imagecard}
-          // alt={props.card.name}
+          alt="{props.card.name}"
           // onClick={handleClick}
         />
         <div className="element__group">
