@@ -1,0 +1,55 @@
+.search {
+  background-image: url(../../images/main_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.search__bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 80px 0 80px 0;
+}
+.search__title {
+  max-width: 608px;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 80px auto 32px auto;
+}
+.search__subtitle {
+  max-width: 545px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0 auto 64px auto;
+}
+@media screen and (max-width: 1234px) {
+  .search__title {
+    max-width: 385px;
+    font-size: 36px;
+    margin: 38px auto 16px auto;
+  }
+  .search__subtitle {
+    max-width: 452px;
+    margin: 0 auto 48px auto;
+  }
+}
+@media screen and (max-width: 704px) {
+  .search__title {
+    max-width: 285px;
+    margin: 30px auto 16px auto;
+  }
+  .search__subtitle {
+    max-width: 288px;
+    margin: 0 auto 122px auto;
+  }
+  .search__bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 56px 0 16px 0;
+  }
+}

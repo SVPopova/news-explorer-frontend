@@ -1,0 +1,49 @@
+.info-news {
+  padding: 80px 0 56px 104px;
+}
+.info-news__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.2;
+  color: rgba(26, 27, 34, 0.5);
+  margin: 40px 0 28px 0;
+}
+.info-news__title {
+  max-width: 530px;
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #1a1b22;
+  margin: 0;
+}
+.info-news__key {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #1a1b22;
+  margin: 30px 0 0 0;
+}
+.info-news__key_span {
+  font-weight: bold;
+}
+@media screen and (max-width: 704px) {
+  .info-news {
+    padding: 56px 0 18px 16px;
+  }
+  .info-news__text {
+    font-size: 12px;
+    margin: 8px 0 16px 0;
+  }
+  .info-news__title {
+    max-width: 288px;
+    font-size: 30px;
+  }
+  .info-news__key {
+    margin: 16px 0 0 0;
+  }
+}

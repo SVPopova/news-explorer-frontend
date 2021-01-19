@@ -1,0 +1,81 @@
+.elements {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 400px);
+  grid-template-rows: repeat(auto-fit, 576px);
+  grid-auto-flow: row;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 16px;
+  grid-auto-rows: 576px;
+  margin: 64px 0;
+}
+.news {
+  background: #f5f6f7;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0 80px 0;
+}
+.news__title {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #1a1b22;
+  margin: 0 0 0 104px;
+}
+.news__button {
+  width: 288px;
+  height: 64px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 auto;
+  text-align: center;
+  color: #1a1b22;
+  background: #ffffff;
+  border-radius: 80px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.news__button:hover {
+  opacity: 0.9;
+}
+@media screen and (max-width: 1234px) {
+  .elements {
+    grid-template-columns: repeat(auto-fit, 224px);
+    grid-template-rows: repeat(auto-fit, 420px);
+    grid-gap: 16px;
+    grid-auto-rows: 420px;
+    margin: 64px 0;
+  }
+  .news__button {
+    width: 240px;
+    height: 56px;
+  }
+  .news__title {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 704px) {
+  .elements {
+    grid-template-columns: 288px;
+    grid-template-rows: repeat(auto-fit, 440px);
+    grid-gap: 10px;
+    grid-auto-rows: 440px;
+    margin: 24px 0;
+  }
+  .news__button {
+    width: 288px;
+  }
+  .news {
+    padding: 32px 0 32px 0;
+  }
+  .news__title {
+    max-width: 288px;
+    margin: 0 auto;
+  }
+}

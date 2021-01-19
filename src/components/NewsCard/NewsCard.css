@@ -1,0 +1,231 @@
+.element {
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 3%;
+  overflow: hidden;
+  position: relative;
+  flex-grow: 0;
+  cursor: pointer;
+}
+.element:hover {
+  box-shadow: 0 0 16px 5px rgba(0, 0, 0, 0.14);
+}
+.element__box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  margin: 24px 0 0 0;
+  padding: 0 24px;
+}
+.element__key {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 88px;
+  height: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  color: #000000;
+  background: #ffffff;
+  border-radius: 10px;
+  z-index: 2;
+  margin: 0;
+  padding: 0 12px;
+  vertical-align: middle;
+}
+.element__button-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.element__save {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  background-image: url(../../images/save.svg);
+  border-radius: 8px;
+  z-index: 2;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.element__delete {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  background-image: url(../../images/delete.svg);
+  border-radius: 8px;
+  z-index: 2;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.element__button-text {
+  display: flex;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  max-width: 182px;
+  height: 40px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1.2;
+  text-align: center;
+  color: #000000;
+  border-radius: 10px;
+  z-index: 2;
+  background: #ffffff;
+  padding: 0 12px;
+  margin: 0 5px 0 0;
+}
+.element__save:hover {
+  background-image: url(../../images/save-hover.svg);
+}
+.element__delete:hover {
+  background-image: url(../../images/delete-hover.svg);
+}
+.element__button-box:hover .element__button-text {
+  visibility: visible;
+}
+.element__save_active {
+  background-image: url(../../images/save-active.svg);
+}
+.element__image {
+  width: 100%;
+  height: 272px;
+  transition: linear 0.5s;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  margin-top: -64px;
+  z-index: 1;
+}
+.element__title {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #1a1b22;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0;
+}
+.element__date {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #b6bcbf;
+  margin: 20px 0 12px 0;
+}
+.element__group {
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 24px;
+}
+.element__text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #1a1b22;
+  margin: 16px 0 18px 0;
+}
+.element__source {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #b6bcbf;
+  margin: 0 0 24px 0;
+}
+@media screen and (max-width: 1234px) {
+  .element__date {
+    margin: 16px 0 12px 0;
+  }
+  .element__box {
+    margin: 8px 0 0 0;
+    padding: 0 8px;
+  }
+  .element__image {
+    height: 150px;
+    margin-top: -64px;
+  }
+  .element__button-text {
+    display: none;
+  }
+  .element__title {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+  .element__text {
+    max-height: 88px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 10px 0 12px 0;
+  }
+  .element__group {
+    height: 302px;
+    margin: 0 16px;
+  }
+  .element__source {
+    margin: 0 0 16px 0;
+  }
+}
+@media screen and (max-width: 704px) {
+  .element__date {
+    margin: 16px 0 10px 0;
+  }
+  .element__box {
+    margin: 16px 0 0 0;
+    padding: 0 16px;
+  }
+  .element__image {
+    height: 196px;
+    margin-top: -64px;
+  }
+  .element__button-text {
+    display: none;
+  }
+  .element__title {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+  .element__text {
+    max-height: 88px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 10px 0 8px 0;
+  }
+  .element__group {
+    height: 250px;
+  }
+}
