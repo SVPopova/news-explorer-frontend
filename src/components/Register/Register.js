@@ -26,11 +26,17 @@ function Register(props) {
     if (state.password) {
       props.onRegister(state.email, state.password, state.name);
       validate.resetForm();
+      state.email = "";
+      state.password = "";
+      state.name = "";
     }
   }
   function handleClose() {
     props.onClose();
     validate.resetForm();
+    state.email = "";
+      state.password = "";
+      state.name = "";
   }
 
   return (

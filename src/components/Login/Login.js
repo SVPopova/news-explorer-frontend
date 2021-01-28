@@ -26,10 +26,14 @@ function Login(props) {
     props.onLogin(state.email, state.password);
     props.onClose();
     validate.resetForm();
+    state.email = "";
+    state.password = "";
   }
   function handleClose() {
     props.onClose();
     validate.resetForm();
+    state.email = "";
+    state.password = "";
   }
 
   return (
