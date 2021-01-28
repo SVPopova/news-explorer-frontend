@@ -24,6 +24,7 @@ function Login(props) {
       return;
     }
     props.onLogin(state.email, state.password);
+    props.onClose();
     validate.resetForm();
   }
   function handleClose() {
@@ -36,7 +37,7 @@ function Login(props) {
       name={`login`}
       isOpen={props.isOpen}
       onSubmit={useFormWithValidation}
-      onClick={handleSubmit}
+      onClickLogin={handleSubmit}
       onClose={handleClose}
       handleRegister={props.handleRegister}
       title={`Вход`}

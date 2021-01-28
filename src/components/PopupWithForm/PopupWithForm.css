@@ -18,7 +18,7 @@
 }
 .popup__container_form {
   flex-direction: column;
-  background-color: white;
+  background-color:#ffffff;
   width: 430px;
   align-items: center;
   border-radius: 3%;
@@ -80,7 +80,7 @@
 }
 .popup__button:disabled {
   color: #b6bcbf;
-  background: #e6e8eb;
+  background: #E6E8EB;;
   box-sizing: border-box;
   pointer-events: none;
   -webkit-user-select: none;

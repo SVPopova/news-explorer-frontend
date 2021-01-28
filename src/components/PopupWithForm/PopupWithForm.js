@@ -23,7 +23,7 @@ function PopupWithForm(props) {
         ></button>
         <h2 className="popup__title">{`${props.title}`}</h2>
         {props.children}
-        <button type="submit" onClick={props.onClick} className="popup__button">
+        <button type="submit" onClick={props.button === "Войти" ? props.onClickLogin : props.onClick} disabled={props.disabled} className="popup__button">
           {props.button}
         </button>
         <div className="popup__text-box">

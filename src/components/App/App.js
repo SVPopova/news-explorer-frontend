@@ -89,6 +89,7 @@ function App() {
     setLoginPopupOpen(false);
     setInfoTooltipOpen(false);
   }
+  
   function handleRegisterPopupOpen() {
     closeAllPopups();
     history.push("/sign-up");

@@ -28,7 +28,7 @@ function Register(props) {
       validate.resetForm();
     }
   }
-  function handleClose(e) {
+  function handleClose() {
     props.onClose();
     validate.resetForm();
   }
