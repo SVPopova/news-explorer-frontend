@@ -23,7 +23,7 @@ function PopupWithForm(props) {
         ></button>
         <h2 className="popup__title">{`${props.title}`}</h2>
         {props.children}
-        <button type="submit" className="popup__button">
+        <button type="submit" onClick={props.onClick} className="popup__button">
           {props.button}
         </button>
         <div className="popup__text-box">
@@ -31,7 +31,9 @@ function PopupWithForm(props) {
           <button
             type="button"
             onClick={
-              props.textLink === "Войти" ? props.onLogin : props.onRegister
+              props.textLink === "Войти"
+                ? props.handleLogin
+                : props.handleRegister
             }
             className="popup__link"
           >

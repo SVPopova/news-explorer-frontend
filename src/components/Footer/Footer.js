@@ -17,6 +17,7 @@ function Footer(props) {
             className="footer__link"
             href="https://praktikum.yandex.ru"
             target="_blank"
+            rel="noreferrer"
           >
             Яндекс.Практикум
           </a>
@@ -26,6 +27,7 @@ function Footer(props) {
             className="footer__social-link"
             href="https://github.com/SVPopova"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               className="footer__social-icon"
@@ -37,6 +39,7 @@ function Footer(props) {
             className="footer__social-link"
             href="https://www.facebook.com/profile.php?id=100001425281177"
             target="_blank"
+            rel="noreferrer"
           >
             <img className="footer__social-icon" src={fb} alt="Facebook"></img>
           </a>

@@ -52,6 +52,18 @@
 .form__submit:focus {
   background: #2a65cc;
 }
+.search__error {
+  width: 490px;
+  height: 64px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.2;
+  z-index: 1;
+  padding: 0 0 0 24px;
+  color: red;
+}
 @media screen and (max-width: 1234px) {
   .search__form {
     max-width: 448px;

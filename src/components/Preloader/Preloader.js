@@ -3,8 +3,11 @@ import "./Preloader.css";
 
 function Preloader(props) {
   return (
-    <section className="preloader">
-      <i class="preloader__circle"></i>
+    <section
+      className={props.isPreloader ? "preloader preloader_active" : "preloader"}
+    >
+      <i className="preloader__circle"></i>
+      <p className="preloader__subtitle">Идет поиск новостей...</p>
     </section>
   );
 }
