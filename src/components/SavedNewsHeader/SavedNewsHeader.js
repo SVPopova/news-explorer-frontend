@@ -53,8 +53,9 @@ function SavedNewsHeader(props) {
         <button
           type="button"
           className="header-saved-news__button header-saved-news__button_search"
+          onClick={props.onSignOut}
         >
-          Грета
+          {props.currentUser.name}
           <img className="header-saved-news__exit-img" alt="выход" src={exit} />
         </button>
       </div>
@@ -71,9 +72,9 @@ function SavedNewsHeader(props) {
         <button
           type="button"
           className="header-saved-news__button header-saved-news__button_search"
-          //  onClick={props.onExit}
+          onClick={props.onSignOut}
         >
-          Грета
+          {props.currentUser.name}
           <img className="header-saved-news__exit-img" alt="выход" src={exit} />
         </button>
       </div>

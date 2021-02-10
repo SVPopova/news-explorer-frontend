@@ -1,3 +1,8 @@
+.elements__link {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
 .element {
   width: 100%;
   background-color: #ffffff;
@@ -39,6 +44,7 @@
   margin: 0;
   padding: 0 12px;
   vertical-align: middle;
+  text-transform: capitalize;
 }
 .element__button-box {
   display: flex;
@@ -59,6 +65,22 @@
   border: none;
   outline: none;
   cursor: pointer;
+}
+.element__save_active {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  z-index: 2;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-image: url(../../images/save-active.svg);
+}
+.element__save:hover {
+  background-image: url(../../images/save-hover.svg);
 }
 .element__delete {
   width: 40px;
@@ -93,24 +115,22 @@
   padding: 0 12px;
   margin: 0 5px 0 0;
 }
-.element__save:hover {
-  background-image: url(../../images/save-hover.svg);
+.element__button-text_disabled {
+  display: none;
 }
+
 .element__delete:hover {
   background-image: url(../../images/delete-hover.svg);
 }
 .element__button-box:hover .element__button-text {
   visibility: visible;
 }
-.element__save_active {
-  background-image: url(../../images/save-active.svg);
-}
 .element__image {
   width: 100%;
   height: 272px;
   transition: linear 0.5s;
   display: block;
-  object-fit: cover;
+  object-fit: fill;
   object-position: center;
   margin-top: -64px;
   z-index: 1;
@@ -122,9 +142,12 @@
   font-size: 26px;
   line-height: 1.2;
   color: #1a1b22;
-  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   margin: 0;
+  min-height: 60px;
 }
 .element__date {
   font-family: "Source Sans Pro", "Arial", sans-serif;
@@ -136,7 +159,6 @@
   margin: 20px 0 12px 0;
 }
 .element__group {
-  height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -151,6 +173,11 @@
   line-height: 1.2;
   color: #1a1b22;
   margin: 16px 0 18px 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 110px;
 }
 .element__source {
   font-family: "Roboto Slab", "Arial", sans-serif;
@@ -184,10 +211,7 @@
   }
   .element__text {
     max-height: 88px;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+
     margin: 10px 0 12px 0;
   }
   .element__group {

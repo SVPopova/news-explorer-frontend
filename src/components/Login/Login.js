@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import PopupWithForm from "../PopupWithForm/PopupWithForm";
 import "./Login.css";
+import { useFormWithValidation } from "../../utils/Validate";
 
 function Login(props) {
+  const validate = useFormWithValidation();
   const [state, setState] = useState({
     email: "",
     password: "",
@@ -14,6 +16,7 @@ function Login(props) {
       ...data,
       [name]: value,
     }));
+    validate.handleChange(e);
   }
   function handleSubmit(e) {
     e.preventDefault();
@@ -21,18 +24,29 @@ function Login(props) {
       return;
     }
     props.onLogin(state.email, state.password);
+    props.onClose();
+    validate.resetForm();
+    state.email = "";
+    state.password = "";
+  }
+  function handleClose() {
+    props.onClose();
+    validate.resetForm();
+    state.email = "";
+    state.password = "";
   }
 
   return (
     <PopupWithForm
       name={`login`}
       isOpen={props.isOpen}
-      onSubmit={handleSubmit}
-      onClose={props.onClose}
-      onRegister={props.onRegister}
+      onSubmit={useFormWithValidation}
+      onClickLogin={handleSubmit}
+      onClose={handleClose}
+      handleRegister={props.handleRegister}
       title={`Вход`}
       button={`Войти`}
-      // toLink={}
+      disabled={!validate.isValid}
       textLink={`Зарегистрироваться`}
     >
       <span className="popup__input-label">Email</span>
@@ -41,10 +55,11 @@ function Login(props) {
         required
         className="popup__input"
         name="email"
-        type="text"
+        type="email"
         value={state.email}
         onChange={handleChange}
       />
+      <span className="register__error">{validate.errors.email}</span>
       <span className="popup__input-label">Пароль</span>
       <input
         placeholder="Введите пароль"
@@ -55,6 +70,7 @@ function Login(props) {
         value={state.password}
         onChange={handleChange}
       />
+      <span className="register__error">{validate.errors.password}</span>
     </PopupWithForm>
   );
 }

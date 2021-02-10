@@ -109,18 +109,15 @@
   display: none;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   background-color: black;
 }
 .header__box_mob_active {
   display: flex;
   z-index: 1;
 }
-.header__menu-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+.header__link_mob {
+  text-align: start;
   width: 288px;
   margin: 0 auto;
 }
@@ -167,7 +164,7 @@
     margin: 0;
     border: none;
     line-height: 3;
-    align-self: flex-start;
+    align-self: center;
   }
   .header__logo-link {
     margin: 0 0 0 16px;
